@@ -38,12 +38,13 @@ class _LogWidgetState extends State<LogWidget> with SingleTickerProviderStateMix
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           widget.netOptions.reqOptions!.url!,
           style: TextStyle(fontSize: 11),
         ),
-        backgroundColor: theme.scaffoldBackgroundColor,
+        backgroundColor: Colors.white,
         elevation: 1.0,
         iconTheme: theme.iconTheme,
         textTheme: theme.textTheme,

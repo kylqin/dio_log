@@ -22,11 +22,12 @@ class _HttpLogListWidgetState extends State<HttpLogListWidget> {
     keys = LogPoolManager.getInstance()!.keys;
     final theme = Theme.of(context);
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'Request Logs',
         ),
-        backgroundColor: theme.scaffoldBackgroundColor,
+        backgroundColor: Colors.white,
         elevation: 1.0,
         iconTheme: theme.iconTheme,
         textTheme: theme.textTheme,
